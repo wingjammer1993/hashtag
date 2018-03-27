@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cb7406-bbfb-4dd2-a9bc-166bb4f882c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/homepage/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/homepage/views.py" afterPath="$PROJECT_DIR$/mysite/homepage/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/homepage/templates/homepage/header.html" afterPath="$PROJECT_DIR$/mysite/homepage/templates/homepage/header.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +22,8 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/homepage/templates/homepage/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2656">
-              <caret line="246" column="50" lean-forward="true" selection-start-line="246" selection-start-column="50" selection-end-line="246" selection-end-column="50" />
+            <state relative-caret-position="287">
+              <caret line="157" column="94" lean-forward="false" selection-start-line="157" selection-start-column="94" selection-end-line="157" selection-end-column="94" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -288,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/homepage/templates/homepage/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2656">
-          <caret line="246" column="50" lean-forward="true" selection-start-line="246" selection-start-column="50" selection-end-line="246" selection-end-column="50" />
+        <state relative-caret-position="287">
+          <caret line="157" column="94" lean-forward="false" selection-start-line="157" selection-start-column="94" selection-end-line="157" selection-end-column="94" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

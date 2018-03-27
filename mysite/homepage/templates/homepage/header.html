@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
     <link href="{% static 'homepage/css/bootstrap.min.css' %}" rel="stylesheet" />
-    <link href="{% static 'homepage/css/now-ui-kit.css?v=1.1.0' %}" rel="stylesheet" />
+    <link href="{% static 'homepage/css/now-ui-kit.css' %}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{% static 'homepage/css/demo.css' %}" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
@@ -138,34 +138,14 @@
             <div class="row">
             	<div class="col-md-6">
             		<p class="category">Sentiment Analysis</p>
-                	<!--<canvas id="doughnutChart"></canvas>
-					<script type="text/javascript">
-						var ctxD = document.getElementById("doughnutChart").getContext('2d');
-					var myLineChart = new Chart(ctxD, {
-					    type: 'doughnut',
-					    data: {
-					        labels: ["POS", "NEG", "Neutral"],
-					        datasets: [
-					            {
-					                data: [300, 50, 100],
-					                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
-					                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-					            }
-					        ]
-					    },
-					    options: {
-					        responsive: true
-					    }
-					});
-					</script>-->
 					<div class="ct-chart1 ct-golden-section" id="chart1"></div>
-					<script type="text/javascript" src="./charts/chart1.js"></script>
+					<script type="text/javascript" src= "{% static 'homepage/charts/chart1.js' %}"></script>
 
             	</div>
             	<div class="col-md-6">
             		<p class="category">Milestones</p>
             		<div class="ct-chart2 ct-golden-section" id="chart2"></div>
-            		<script type="text/javascript" src="./charts/chart2.js"></script>
+            		<script type="text/javascript" src="{% static 'homepage/charts/chart2.js' %}"></script>
             	</div>
             </div>
 
@@ -175,7 +155,7 @@
         	<div class="row">
         		<p class="category">World Map</p>
                 <div id="chartdiv"></div>
-                <script type="text/javascript" src="./charts/worldmap.js"></script>
+                <script type="text/javascript" src="{% static 'homepage/charts/worldmap.js' %}"></script>
         	</div>
     	</div>
 	</div>
