@@ -54,7 +54,7 @@
             }, 1000);
         }
     }
-</script>
+	</script>
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -90,7 +90,7 @@
             <div class="container">
 
                 <div class="content-center brand">
-                    <form action="" class="search-form">
+                    <form action="" class="search-form" onSubmit="return false;">
                         <div class="form-group has-feedback">
                             <label for="search" class="sr-only">Search Hashtag</label>
                             <input type="text" class="form-control" name="search" id="search" placeholder="search">
@@ -107,7 +107,7 @@
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-10 col-lg-8 col-xl-6 ml-auto mr-auto">
-	                <p class="category">Recommended Hashtags</p>
+	                <p class="category" id="recommended">Recommended Hashtags</p>
 	                <!-- Nav tabs -->
 	                <div class="card">
 	                        <div class="card-body">
@@ -261,8 +261,23 @@
     </div>
 </body>
 <!--   Core JS Files   -->
+<script type="text/javascript">
 
 
+	var query = document.getElementById("search");
+	if(query){
+	query.addEventListener("keydown", function (e) {
+		if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+			validate(e);
+		}
+	})};
 
+	function validate(e) {
+		var text = e.target.value;
+  		var element_to_scroll_to = document.getElementById('recommended');
+		element_to_scroll_to.scrollIntoView(true);
+	}
+
+</script>
 
 </html>
