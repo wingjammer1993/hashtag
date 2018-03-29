@@ -8,9 +8,9 @@ def index(request):
 
 def home(request):
 	if request.method == 'GET':
-		data = request.GET['search']
-		if data:
-			data = process_search.accept_input_for_processing(data)
-			return render(request, 'homepage/search.html', {'data': data})
+		query = request.GET['search']
+		if query:
+			top_tweets_html = process_search.accept_input_for_processing(query)
+			return render(request, 'homepage/search.html', {'query': query, 'top_tweets_html': top_tweets_html})
 
 

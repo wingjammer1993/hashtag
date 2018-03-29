@@ -13,15 +13,14 @@ t = Twitter(
 def get_top_tweets(search_string):
 	tweets_file = t.search.tweets(q=search_string, result_type='recent', lang='en', count=10)
 	print(type(t))
-
-	g = open('tweets.txt', 'a')
-	with g as outfile:
-		json.dump(tweets_file, outfile, indent=4)
+	status = tweets_file['statuses']
+	top_tweets = []
+	for tweet in status:
+		tweet_id = tweet['id']
+		top_tweets.append(t.statuses.oembed(_id=tweet_id, omit_script=True)['html'])
+	return top_tweets
 
 
 def accept_input_for_processing(search_string):
-	get_top_tweets(search_string)
-	print('this is being processed')
-	return 'amruta'
-
-
+	top_tweets = get_top_tweets(search_string)
+	return top_tweets
